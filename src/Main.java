@@ -15,15 +15,20 @@ public class Main {
         printYearLeap(year);
         // ЗАДАНИЕ 2
         int clientOSS = 0;
-        clientDevise (clientOSS);
+        clientDevise(clientOSS);
         int clientDeviseYear = 2014;
-        currentYear (clientDeviseYear);
+        currentYear(clientDeviseYear);
+        int deliveryDistance = 95;
+        int days = 1;
+
+        deliveryDistanceDays (days, deliveryDistance );
+
 
     }
 
 
     // ЗАДАНИЕ 2
-    public static void clientDevise (int clientOSS) {
+    public static void clientDevise(int clientOSS) {
         if (clientOSS == 0) {
 
             System.out.println("IOS");
@@ -32,16 +37,26 @@ public class Main {
         }
     }
 
-        public static void  currentYear ( int clientDeviseYear) {
-            if (clientDeviseYear > 2015) {
-                System.out.println("Установить обычную версию приложения ");
-            } else {
-                System.out.println("Установить lite версию приложения  ");
-            }
+    public static void currentYear(int clientDeviseYear) {
+        if (clientDeviseYear > 2015) {
+            System.out.println("Установить обычную версию приложения ");
+        } else {
+            System.out.println("Установить lite версию приложения  ");
+        }
+    }
 
 
+    // ЗАДАНИЕ 3
+    public static void deliveryDistanceDays(int days, int deliveryDistance) {
 
+        if (deliveryDistance > 20)
+            days++;
 
+        if (deliveryDistance > 60)
+            days++;
 
+        {
+            System.out.println("Потребуется дней:" + days);
+        }
     }
 }
